@@ -109,6 +109,14 @@ body{
 .social-link-icon{
     fill: var(--icon-color);
 }
+.btn-form{
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
 
 /*header*/
 .header-page{
@@ -221,14 +229,7 @@ body{
     min-width: 216px;
     padding: 10px 22px;
     margin-left: auto;
-    margin-right: auto;
-
-    font-style: normal;
-    font-weight: 700;    
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color:var(--white-color);
-    background-color: var(--accent-color);    
+    margin-right: auto;     
 }
 
 .uniq-flex-cont{
@@ -402,6 +403,10 @@ body{
     position: absolute;
     top:50%;
     left:50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
     transform: translate(-50%,-50%) scale(1);
     width: 528px;
     height: 580px;
@@ -415,6 +420,46 @@ body{
     opacity:0;
     visibility: hidden;
     pointer-events: none;
+}
+.modal > h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    line-height: 1.15;
+    font-size: 20px;
+}
+.form-text{
+    font-size: 12px;
+    letter-spacing: 0.01em;
+}
+.form-label{
+    margin-bottom: 4px;
+}
+.form-input{
+    margin-bottom: 10px;
+}
+.form-comment{
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    resize: none;
+}
+.form-comment::placeholder{    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.assept{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.assept .uniq-text > a{
+    color: var(--accent-color);
+}
+.form-subm-btn{
+    width: 200px;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .modal-close-btn{
     position: absolute;
