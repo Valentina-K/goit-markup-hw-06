@@ -199,31 +199,51 @@
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <h2>Залиште свої дані, ми вам передзвонимо</h2>
-            <label for="username" class="form-label form-text">Ім'я</label>
-            <input type="text" id="username" class="form-input">
-            <label for="tel" class="form-label form-text">Телефон</label>
-            <input type="tel" id="tel" class="form-input">
-            <label for="email" class="form-label form-text">Пошта</label>
-            <input type="email" id="email" class="form-input">
-            <label for="comment" class="form-label form-text">Коментар</label>
-            <textarea name="comment" id="comment" rows="10" class="form-comment form-text" placeholder="Введіть текст"></textarea>
-            <div class="assept">
-                <input type="checkbox" name="assept" id="assept">
-                <label for="assept" class="uniq-text">
-                    Погоджуюся з розсилкою та приймаю
+        <div class="modal">                        
+            <form class="contact-form">
+                <b>Залиште свої дані, ми вам передзвонимо</b>
+                <label for="username" class="form-label form-text">Ім'я</label>
+                <div class="form-field">
+                    <input type="text" name="username" id="username" class="form-input">
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+                <label for="tel" class="form-label form-text">Телефон</label>
+                <div class="form-field">
+                    <input type="tel" name="tel" id="tel" class="form-input">
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <label for="email" class="form-label form-text">Пошта</label>
+                <div class="form-field">
+                    <input type="email" name="email" id="email" class="form-input">
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>                
+                <label for="comment" class="form-label form-text">Коментар</label>
+                <textarea name="comment" id="comment" class="form-comment form-text" placeholder="Введіть текст"></textarea>                                
+                <label for="accept" class="accept uniq-text">
+                    <input type="checkbox" class="checkbox" name="accept" id="accept" required>
+                    <svg class="accept-icon accept-icon-ch" height="16" width="16">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <svg class="accept-icon accept-icon-unch" height="16" width="16">
+                        <use href="./images/icons.svg#icon-check-unchecked"></use>
+                    </svg>                    
+                    Погоджуюся з розсилкою та приймаю&nbsp;
                     <a href="#">Умови договору</a>
-                </label>
-            </div>
-            <button type="submit" class="button btn-form form-subm-btn">Відправити</button>
-            <button type="button" class="modal-close-btn" data-modal-close>
-                <svg class="modal-close-icon" width="18" height="18">
-                    <use href="./images/icons.svg#close-icon">
-
-                    </use>
-                </svg>
-            </button>
+                </label>                
+                <button type="submit" class="button btn-form form-subm-btn">Відправити</button>
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-icon" width="18" height="18">
+                        <use href="./images/icons.svg#close-icon">             
+                        </use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
